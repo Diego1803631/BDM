@@ -1,0 +1,13 @@
+#course.card {
+  background-color: transparent;
+  border-style: none;
+  margin: 1%;
+  font-family: "Noto Sans", sans-serif;
+}
+#course.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.checked {
+  color: orange;
+}
+

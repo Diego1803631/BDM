@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="searcher.css">
+    <link rel="stylesheet" href="homesession.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Searcher</title>
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav id="mNavbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a id="main" class="navbar-brand" href="home.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categorías
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Software</a>
+                        <a class="dropdown-item" href="#">Design</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Marketing</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline" style="width: max-content;">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <a href=""><span class="material-icons">notifications</span></a>
+                <a href=""><span class="material-icons">shopping_cart</span></a>
+                <div class="dropdown">
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
+                    <div class="dropdown-content">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">Mi perfil</a>
+                            <a href="#" class="list-group-item list-group-item-action">Mis cursos</a>
+                            <a href="#" class="list-group-item list-group-item-action">Configuración</a>
+                            <a href="#" class="list-group-item list-group-item-action">Cerrar sesión</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <div id="mContainer">
+        <h2>3 resultados para “C++”</h2>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+
+                <div class="dropdown">
+                    <button class="btn btn-outline-info dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Ordenar por
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Título</a>
+                        <a class="dropdown-item" href="#">Mejor valorado</a>
+                        <a class="dropdown-item" href="#">Más reciente</a>
+                    </div>
+                </div>
+            </ol>
+        </nav>
+
+        <div class="row">
+            <div class="col-md-3 order-md-last">
+                <!--Search filters-->
+                <form action="">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"></li>
+                        <li class="list-group-item"><a data-toggle="collapse" href="#categorias" role="button"
+                                aria-expanded="false" aria-controls="categorias">
+                                Categorías
+                            </a>
+                            <div class="collapse" id="categorias">
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                <label for="vehicle1"> Software</label><br>
+                                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                                <label for="vehicle2"> Design</label><br>
+                                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                                <label for="vehicle3"> Marketing</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item"><a data-toggle="collapse" href="#Subcategoría" role="button"
+                                aria-expanded="false" aria-controls="Subcategoría">
+                                Subcategoría
+                            </a>
+                            <div class="collapse" id="Subcategoría">
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                <label for="vehicle1"> Software</label><br>
+                                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                                <label for="vehicle2"> Design</label><br>
+                                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                                <label for="vehicle3"> Marketing</label>
+                            </div>
+                        <li class="list-group-item"><a data-toggle="collapse" href="#Precio" role="button"
+                                aria-expanded="false" aria-controls="Precio">
+                                Precio
+                            </a>
+                            <div class="collapse" id="Precio">
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                <label for="vehicle1"> De pago</label><br>
+                                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                                <label for="vehicle2"> Gratis</label>
+                            </div>
+                        <li class="list-group-item"></li>
+                        
+                    </ul>
+                </form>
+            </div>
+            <div class="col-md-9 order-md-first">
+                <!--Search results-->
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img style="width: auto;" src="http://nakedcode.net/wp-content/uploads/2019/05/cplus.jpg"
+                                alt="..." class="img-fluid" />
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">
+                                    This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.
+                                </p>
+                                <p class="card-text">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img style="width: auto;" src="http://nakedcode.net/wp-content/uploads/2019/05/cplus.jpg"
+                                alt="..." class="img-fluid" />
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">
+                                    This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.
+                                </p>
+                                <p class="card-text">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img style="width: auto;" src="http://nakedcode.net/wp-content/uploads/2019/05/cplus.jpg"
+                                alt="..." class="img-fluid" />
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">
+                                    This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.
+                                </p>
+                                <p class="card-text">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!--<button type="button" data-toggle="collapse" data-target="#filters" class="d-block d-md-none btn btn-info btn-block mb-3">Filtrar por &dtrif;</button>
+        <div id="filters" class="collapse d-md-block">
+            Search filters
+        </div>-->
+
+    </div>
+    <div id="footer">
+        <hr>
+        <div class="text-center">
+            <p>© 2021</p>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

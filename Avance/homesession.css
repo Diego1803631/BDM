@@ -1,0 +1,113 @@
+#mNavbar {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-family: "Noto Sans", sans-serif;
+}
+#main:hover {
+  color: #17a2b8;
+}
+#btnIniciarSesion {
+  margin-left: auto;
+  margin-right: 5px;
+}
+#btnRegistrarse {
+  margin-right: auto;
+}
+#mContainer {
+  padding: 1%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+#sContainer {
+  padding: 1%;
+  font-family: "Noto Sans", sans-serif;
+}
+#sNavbar.nav .nav-item .nav-link {
+  color: grey;
+}
+#sNavbar.nav .nav-item .nav-link:hover {
+  color: #102226;
+}
+#sNavbar.nav .nav-item .nav-link.active {
+  color: #17a2b8;
+}
+.card-group {
+  max-width: 100%;
+}
+.card-group .card {
+  background-color: transparent;
+  border-style: none;
+  margin: 1%;
+  font-family: "Noto Sans", sans-serif;
+}
+body {
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(232, 232, 232, 1) 100%
+  );
+}
+#footer p {
+  color: grey;
+  font-family: "Noto Sans", sans-serif;
+}
+#banner {
+  height: 270px;
+  background-color: #102226;
+}
+#banner h2 {
+  color: white;
+  font-family: "Noto Sans", sans-serif;
+  padding-top: 5%;
+  text-align: center;
+}
+#sContainer2 {
+  padding: 1%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+#sContainer3 {
+  padding: 1%;
+  font-family: "Noto Sans", sans-serif;
+}
+#InicioSesion {
+  font-family: "Noto Sans", sans-serif;
+}
+#modalregister {
+  color: #17a2b8;
+}
+.avatar {
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  font-family: "Noto Sans", sans-serif;
+  right: 0;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+.material-icons {
+  padding: 8px;
+  margin: auto;
+  color: grey;
+  margin: auto;
+}
+.material-icons:hover {
+  color: #17a2b8;
+}

@@ -1,0 +1,12 @@
+.list-group .list-group-item{
+    background-color: transparent;
+}
+.col-md-9 .card{
+    padding: 1%;
+    background-color: transparent;
+    font-family: "Noto Sans", sans-serif;
+    border-style: none;
+}
+h2{
+    font-family: "Noto Sans", sans-serif;
+}
