@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="homesession.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Carrito</title>
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav id="mNavbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a id="main" class="navbar-brand" href="home.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categorías
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Software</a>
+                        <a class="dropdown-item" href="#">Design</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Marketing</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline" style="width: max-content;">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <a href=""><span class="material-icons">notifications</span></a>
+                <a href=""><span class="material-icons">shopping_cart</span></a>
+                <div class="dropdown">
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
+                    <div class="dropdown-content">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">Mi perfil</a>
+                            <a href="#" class="list-group-item list-group-item-action">Mis cursos</a>
+                            <a href="#" class="list-group-item list-group-item-action">Configuración</a>
+                            <a href="#" class="list-group-item list-group-item-action">Cerrar sesión</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <div id="mContainer">
+        <div class="card border-info mb-3" style="max-width: 100%; background-color: #102226; color: white;">
+            <div class="card-body">
+                <h2 class="card-title">Carrito de compras<span class="material-icons">shopping_cart</span></h2>
+                <small>2 cursos en el carrito</small>
+            </div>
+        </div>
+        <div class="card w-75">
+            <div class="card-body">
+                <h5 class="card-title">Concept Art Architecture</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet repellat, assumenda
+                    illum, excepturi distinctio cum nemo quo temporibus, minus soluta id quis odio. Autem animi deserunt
+                    rem libero ullam quae.</p>
+                <p style="font-weight: bold;">1.699 MX$</p>
+                <a href="#" class="btn btn-info">Info</a>
+                <a href="#" class="btn btn-info">Eliminar</a>
+            </div>
+        </div>
+        <div class="card w-75">
+            <div class="card-body">
+                <h5 class="card-title">Web design</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet repellat, assumenda
+                    illum, excepturi distinctio cum nemo quo temporibus, minus soluta id quis odio. Autem animi deserunt
+                    rem libero ullam quae.</p>
+                <p style="font-weight: bold;">1.500 MX$</p>
+                <a href="#" class="btn btn-info">Info</a>
+                <a href="#" class="btn btn-info">Eliminar</a>
+
+            </div>
+        </div>
+        <div class="float-right">
+            <h4 style="font-weight: bold;">Total: 3,199 MX$</h4>
+        </div>
+        <br>
+        <hr>
+        <div class="float-right">
+            <button type="button" class="btn btn-outline-info">Vaciar carro</button>
+            <button type="button" class="btn btn-outline-info" data-toggle="modal"
+                data-target="#exampleModalCenter">Comprar ahora</button>
+        </div>
+        <br><br><br><br><br>
+    </div>
+    <div id="footer">
+        <hr>
+        <div class="text-center">
+            <p>© 2021</p>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Confirmación de compra</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                            value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Visa
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                            value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Master Card
+                        </label>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input class="form-control" id="exampleFormControlInput1" placeholder="CARD NUMBER">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="inputZip" placeholder="EXPIRE DATE">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="inputZip" placeholder="CCV">
+                        </div>
+                        <small style="padding: 3px;color: grey;">###</small>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-info">Confirmar compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
