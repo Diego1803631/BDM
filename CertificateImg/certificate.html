@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="certificate.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="jquery-3.1.1.mini.js"></script>
+    <script src="html2canvas.0.4.1.min.js"></script>
+    <script src="canvas2image.min.js"></script>
+
+
+    <title>Certificate</title>
+</head>
+
+<body>
+    <!--style="display: none;"-->
+    <div id="figuras">
+        <div class="container">
+            <span class="material-icons">
+                military_tech
+            </span>
+            <div class="logo">
+                ~Quoschool~
+            </div>
+            <div class="marquee">
+                Certificado de Finalización
+            </div>
+
+            <div class="assignment">
+                Este certificado es otorgado a
+            </div>
+            <div class="person">
+                Diego Flores
+            </div>
+            Por haber finalizado con éxito el curso:
+            <div class="reason">
+                Desarrollo Web
+            </div>
+        </div>
+    </div>
+    <br>
+    <input type="button" class="btn tw" id="btnSave2" value="Descargar imagen">
+    <script>
+        document.getElementById('figuras').contentEditable = 'true'; document.getElementById('figuras').designMode = 'on';
+        $(function () {
+            $("#btnSave2").click(function () {
+                html2canvas($("#figuras"), {
+                    onrendered: function (canvas) {
+                        saveAs(canvas.toDataURL(), 'canvas.png');
+                    }
+                });
+            });
+            function saveAs(uri, filename) {
+                var link = document.createElement('a');
+                if (typeof link.download === 'string') {
+                    link.href = uri;
+                    link.download = filename;
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                } else {
+                    window.open(uri);
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
