@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mycourses.css">
+    <link rel="stylesheet" href="circle.css">
+    <link rel="stylesheet" href="homesession.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Course</title>
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav id="mNavbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a id="main" class="navbar-brand" href="home.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categorías
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Software</a>
+                        <a class="dropdown-item" href="#">Design</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Marketing</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline" style="width: max-content;">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <a href=""><span class="material-icons">notifications</span></a>
+                <a href=""><span class="material-icons">shopping_cart</span></a>
+                <div class="dropdown">
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
+                    <div class="dropdown-content">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">Mi perfil</a>
+                            <a href="#" class="list-group-item list-group-item-action">Mis cursos</a>
+                            <a href="#" class="list-group-item list-group-item-action">Configuración</a>
+                            <a href="#" class="list-group-item list-group-item-action">Cerrar sesión</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <div id="mContainer">
+        <div class="card border-info mb-3" style="max-width: 100%; background-color: #102226; color: white;">
+            <div id="level" style="padding: 10px;margin-left: auto; 
+            margin-right: 0;">
+                <div class="c100 p100 small dark green">
+                    <span>100%</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <h2 class="card-title">Concept Art Architecture</h2>
+                <p class="card-text">Design and painting stunning cityscapes and interiors for use as concept art or
+                    stand-alone masterpieces</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago by <a href="profile.html"
+                            style="color:#17a2b8 ;">30X40 Design Workshop</a></small></p>
+            </div>
+        </div>
+
+        <ul class="nav " id="sNavbar" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#nivel1" role="tab"
+                    aria-controls="nivel1" aria-selected="true">Nivel 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#nivel2" role="tab" aria-controls="nivel2"
+                    aria-selected="false">Nivel 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#nivel3" role="tab" aria-controls="nivel3"
+                    aria-selected="false">Nivel 3</a>
+            </li>
+        </ul>
+        <hr>
+        <div class="tab-content" id="sNavbarContent">
+            <div class="tab-pane fade show active" id="nivel1" role="tabpanel" aria-labelledby="nivel1-tab">
+                <h4>Getting Started With The Course</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ipsam maxime dolore laudantium
+                    molestias architecto delectus iure recusandae saepe reiciendis quo quidem ducimus, optio aperiam
+                    aspernatur ad laborum consequatur voluptatibus!</p>
+                <div class="text-center">
+                    <video style="max-width: 50%;" controls>
+                        <source src="Sketch like an Architect (Techniques + Tips from a Real Project).mp4"
+                            type="video/mp4">
+                    </video>
+                    <br>
+                </div>
+                <h4>Documentación <span class="material-icons">
+                        perm_media
+                    </span></h4>
+                <button type="button" class="btn btn-outline-info">
+                    Imágenes <span class="badge bg-outline-info">4</span>
+                </button>
+                <button type="button" class="btn btn-outline-info">
+                    Documentos <span class="badge bg-outline-info">2</span>
+                </button>
+            </div>
+            <div class="tab-pane fade" id="nivel2" role="tabpanel" aria-labelledby="nivel2-tab">
+                <h4>Learn The Fundamentals of
+                    Drawing</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ipsam maxime dolore laudantium
+                    molestias architecto delectus iure recusandae saepe reiciendis quo quidem ducimus, optio aperiam
+                    aspernatur ad laborum consequatur voluptatibus!</p>
+                <div class="text-center">
+                    <video style="max-width: 50%;" controls>
+                        <source src="Sketch like an Architect (Techniques + Tips from a Real Project).mp4"
+                            type="video/mp4">
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nivel3" role="tabpanel" aria-labelledby="nivel3-tab">
+                <h4>Perspective Drawing</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ipsam maxime dolore laudantium
+                    molestias architecto delectus iure recusandae saepe reiciendis quo quidem ducimus, optio aperiam
+                    aspernatur ad laborum consequatur voluptatibus!</p>
+                <div class="text-center">
+                    <video style="max-width: 50%;" controls>
+                        <source src="Sketch like an Architect (Techniques + Tips from a Real Project).mp4"
+                            type="video/mp4">
+                </div>
+            </div>
+            <br>
+            <hr>
+            <h4>Comentarios</h4>
+            <div class="card" style="margin: 5px; background-color: transparent;">
+                <div class="card-body">
+                    <p style="font-weight: bold;"><img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar"
+                            class="avatar"> User</p>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                            style="height: 100px"></textarea>
+                    </div>
+                    <label><span class="fa fa-star checked" style="color: #17a2b8;"></span></label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                            value="option3">
+                        <label class="form-check-label" for="inlineRadio3">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
+                            value="option4">
+                        <label class="form-check-label" for="inlineRadio4">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5"
+                            value="option5">
+                        <label class="form-check-label" for="inlineRadio5">5</label>
+                    </div>
+                    <br>
+                    <div class="float-right">
+                        <button type="button" class="btn btn-info">Enviar</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card" style="margin: 5px; background-color: transparent;">
+                <div class="card-body">
+                    <p style="font-weight: bold;"><img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar"
+                            class="avatar"> User</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ut nam aliquam velit, nemo ratione
+                        cum dolores quia, explicabo nobis veniam id debitis quaerat voluptatibus porro magnam? Dolore,
+                        quasi maiores.</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="card" style="margin: 5px; background-color: transparent;">
+                <div class="card-body">
+                    <p style="font-weight: bold;"><img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar"
+                            class="avatar"> User</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ut nam aliquam velit, nemo ratione
+                        cum dolores quia, explicabo nobis veniam id debitis quaerat voluptatibus porro magnam? Dolore,
+                        quasi maiores.</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <hr>
+        <div class="text-center">
+            <p>© 2021</p>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
